@@ -1,8 +1,8 @@
-export default function Album({image, name}) {
+export default function Album({image, name, setAlbum}) {
     return (
-        <div className="Album color-white">
+        <button className="Album color-white" onClick={setAlbum}>
             <img className="Album__image" src={image} alt={name} width="50" height="50"></img>
             <span className="Album__name">{name}</span>
-        </div>
+        </button>
     )
 }

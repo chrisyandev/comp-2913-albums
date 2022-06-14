@@ -29,7 +29,19 @@ button {
 }
 
 .Album {
+  display: block;
+  background-color: navy;
+  width: 500px;
+  margin: 10px;
+  text-align: left;
+}
 
+.Album:hover {
+  background-color: gray;
+}
+
+.Album:active {
+  background-color: aqua;
 }
 
 .Album__image {
@@ -37,6 +49,6 @@ button {
 }
 
 .Album__name {
-  vertical-align: top;
   margin-left: 10px;
+  vertical-align: top;
 }
